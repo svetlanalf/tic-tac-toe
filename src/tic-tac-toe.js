@@ -24,7 +24,7 @@ class TicTacToe {
     }
 
     isFinished() {
-        return this.getWinner() || this.noMoreTurns();
+        return !!this.getWinner() || this.noMoreTurns();
     }
 
     getWinner() {
